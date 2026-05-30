@@ -1,21 +1,48 @@
-__pycache__/
-*.py[cod]
-*.so
-
+# Virtual Environment
 .venv/
 venv/
 env/
 
-.pytest_cache/
-.mypy_cache/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
 
+# Database — never push this
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables — never push this
 .env
+.env.local
+.env.production
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker
+*.override.yml
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Distribution
 dist/
 build/
 *.egg-info/
-
-.vscode/
-.idea/
-
-.DS_Store
